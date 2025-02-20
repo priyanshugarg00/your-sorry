@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  overflow: hidden; 
+  position: relative;
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation: topFadeOut 5s forwards; 
+  color: white;
+}
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation: rightFadeInOut 6s forwards;
+  animation-delay: 3s;
+  color: #ccc;
+}
+
+.third-text {
+ 
+  font-size: 2rem;
+  position: absolute;
+ 
+  opacity: 0;
+  animation:  rightFadeInOut 6s  forwards;
+  animation-delay: 7.5s;
+  color: #a3ddf0;
+}
+
+
+
+@keyframes topFadeOut {
+  0% {
+      top: -3rem;
+      opacity: 0;
+  }
+  75% {
+      top: 25%;
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+      bottom: -5rem;
+      opacity: 0;
+  }
+  75% {
+      bottom: 25%;
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+      top: -3rem;
+      opacity: 0;
+  }
+  75% {
+      top: 45%;
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+      right: -3rem;
+      opacity: 0;
+  }
+  75% {
+      right: 10rem;
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+  45% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
